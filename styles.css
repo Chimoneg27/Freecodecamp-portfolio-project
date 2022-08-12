@@ -1,0 +1,228 @@
+:root{
+    --seal-brown: hsla(22, 100%, 16%, 1);
+    --windsor-tan: hsla(30, 89%, 32%, 1);
+    --key-lime: hsla(67, 84%, 80%, 1);
+    --purple: hsla(268, 76%, 36%, 1);
+    --imperial-red: hsla(348, 100%, 48%, 1);
+    --medium-aquamarine: hsla(165, 78%, 56%, 1);
+    --burnished-brown: hsla(355, 14%, 52%, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Montserrat";
+    width: 100vw;
+    height: 100vh;
+}
+
+#navbar{
+    font-family: "Montserrat";
+    width: 100%;
+    height: 65px;
+    padding: 0px 40px 0px 0px;
+    font-size: 1.5rem;    
+    background-color: var(--imperial-red);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: 20px;
+}
+
+#navbar li:hover{
+    background-color: var(--medium-aquamarine);
+    color: white;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 520px;
+    background-color: var(--purple);
+    color: black;
+    margin-top: 65px;
+    position: relative;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box h1{
+    font-size: 55px;
+    color: #fff;
+}
+
+.text-box h2{
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--seal-brown);
+}
+
+#projects{
+    width: 100%;
+    height: 1400px;
+    background-color:var(--burnished-brown);
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.projects-header{
+    width: 700px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-bottom: 2px solid #fff;
+}
+
+#projects h2{
+    font-size: 45px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 460px);
+    gap: 20px;
+    width: 91%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.project-items{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image{
+    width: 100%;
+    height: 85%;
+}
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.project-title{
+    width: 100%;
+    height: 15%;
+    background-color: var(--medium-aquamarine);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.project-title a:hover{
+    color: var(--imperial-red);
+}
+
+.more-projects{
+    width: 15%;
+    height: 5%;
+    background-color: var(--medium-aquamarine);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.more-projects a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.more-projects a:hover{
+    color: var(--imperial-red);
+}
+
+#contacts{
+    width: 100%;
+    height: 535px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: "Montserrat";
+}
+
+#contacts h1{
+    font-size: 70px;
+}
+
+#contacts ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style-type: none;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+#contacts a{
+    text-decoration: none;
+    color: #fff;
+}
+
+hr{
+    width: 100%;
+    border: 4px solid var(--imperial-red);
+    margin-top: 150px;
+}
